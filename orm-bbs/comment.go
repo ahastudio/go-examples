@@ -1,9 +1,10 @@
-package orm_bbs
+package ormbbs
 
 import (
 	"github.com/jinzhu/gorm"
 )
 
+// Comment model.
 type Comment struct {
 	gorm.Model
 

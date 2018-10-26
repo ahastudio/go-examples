@@ -1,10 +1,12 @@
-package orm_bbs
+package ormbbs
 
 import (
 	"fmt"
 	"log"
 
 	"github.com/ahastudio/go-examples/orm-bbs/db"
+
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
 )
 
 func ExamplePost() {

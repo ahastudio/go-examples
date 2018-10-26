@@ -21,3 +21,6 @@
 
 # SQLite3
 *.sqlite3
+
+# vendor
+vendor/

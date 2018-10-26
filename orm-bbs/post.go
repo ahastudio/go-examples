@@ -1,9 +1,10 @@
-package orm_bbs
+package ormbbs
 
 import (
 	"github.com/jinzhu/gorm"
 )
 
+// Post model.
 type Post struct {
 	gorm.Model
 

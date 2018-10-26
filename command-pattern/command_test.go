@@ -1,10 +1,10 @@
-package command_pattern
+package commandpattern
 
 import (
 	"fmt"
 )
 
-func ExampleTest() {
+func ExampleCommand() {
 	var cmd Command
 
 	cmd = CommandFunc(run)

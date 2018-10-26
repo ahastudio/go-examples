@@ -1,0 +1,17 @@
+language: go
+
+go:
+- "1.10"
+
+sudo: false
+
+install:
+- go get ./...
+- go get -u golang.org/x/lint/golint
+- go get -u github.com/mattn/go-sqlite3
+
+script:
+- diff -u <(echo -n) <(gofmt -d $(go list -f '{{.Dir}}' ./...))
+- golint ./...
+- go vet ./...
+- go test -v ./...
